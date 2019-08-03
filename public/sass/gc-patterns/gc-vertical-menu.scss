@@ -1,0 +1,118 @@
+
+.gc-vertical-nav{
+  padding:0px 15px 0 15px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-weight:400;
+  font-size:14px;
+  font-size:.875rem;
+  line-height:1.14286;
+}
+@media print{
+  .gc-vertical-nav{
+      font-family:$font-family;
+  }
+}
+@media (min-width: 40.0625em){
+  .gc-vertical-nav{
+      font-size:16px;
+      font-size:1rem;
+      line-height:1.25;
+  }
+}
+@media print{
+  .gc-vertical-nav{
+      font-size:14pt;
+      line-height:1.2;
+  }
+}
+@media (min-width: 40.0625em){
+  .gc-vertical-nav{
+      margin-left:-15px;
+  }
+}
+.gc-vertical-nav__section{
+  margin:0 0 20px;
+  padding:0;
+  list-style-type:none;
+}
+.gc-vertical-nav__link{
+  display:block;
+   padding:8px 30px 8px 10px;
+  // border-left:4px solid $govuk-border-colour;
+  text-decoration:none;
+  margin-bottom: 5px;
+}
+
+.gc-vertical-nav__link:focus{
+  background:inherit;
+}
+
+.gc-vertical-nav__section-item--current{
+  border-left:4px solid govuk-colour("blue");
+  font-weight: 700;
+}
+
+.gc-vertical-nav__link:hover{
+  color: govuk-colour("blue");
+  border-left-color: govuk-colour("blue");
+  text-decoration: underline;
+}
+
+.gc-vertical-nav__section-item--current .gc-vertical-nav__link{
+  border-left-color: govuk-colour("blue");
+  font-weight:bold;
+}
+.gc-vertical-nav__section-item--current .gc-vertical-nav__link:hover{
+  text-decoration: none;
+}
+.gc-vertical-nav__section--nested{
+  margin-bottom:5px;
+}
+.gc-vertical-nav__section--nested .gc-vertical-nav__link{
+  padding-left:20px;
+  font-weight:400;
+  margin-bottom:0px;
+  margin-top:-5px;
+}
+
+.gc-vertical-nav__section--nested .gc-vertical-nav__section-item::before {
+  content: "—";
+  margin-left: -20px;
+  color: govuk-colour("dark-grey");
+}
+
+.gc-vertical-nav--count{
+  float: right;
+  margin-top: 8px;
+  margin-right: 5px;
+  background: govuk-colour('mid-grey');
+  padding: 3px 4px 2px 4px;
+  border-radius: 2px;
+  color:govuk-colour("black");
+  font-weight: 700;
+  min-width: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-family:$font-family;
+  }
+
+
+@media print{
+  .gc-vertical-nav__theme{
+      font-family:sans-serif
+  }
+}
+@media (min-width: 40.0625em){
+  .gc-vertical-nav__theme{
+      font-size:19px;
+      font-size:1.1875rem;
+      line-height:1.31579;
+  }
+}
+@media print{
+  .gc-vertical-nav__theme{
+      font-size:14pt;
+      line-height:1.15;
+  }
+}

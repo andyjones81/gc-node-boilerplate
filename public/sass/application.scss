@@ -1,0 +1,15 @@
+$govuk-global-styles: true;
+$path: "/public/images/";
+
+@import "node_modules/govuk-frontend/govuk/all";
+
+@import "components/_cookie-banner";
+@import "gc-patterns/gc-colors";
+@import "gc-patterns/gc-alert";
+@import "gc-patterns/gc-card";
+@import "gc-patterns/gc-typography";
+@import "gc-patterns/gc-position";
+@import "gc-patterns/gc-currency";
+@import "gc-patterns/gc-vertical-menu";
+@import "gc-patterns/gc-hero";
+@import "gc-patterns/gc-overrides";

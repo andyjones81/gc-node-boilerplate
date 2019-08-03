@@ -1,0 +1,29 @@
+
+.gc-product-page {
+    margin-top: 20px;
+    margin-bottom: -20px;
+    background: $gcebonyshade;
+  
+    [class^="govuk-heading-"],
+    [class^="govuk-body-"],
+    .govuk-breadcrumbs__list-item,
+    .govuk-breadcrumbs__link,    
+    .govuk-label,
+    .govuk-back-link,
+    .govuk-link,
+    .govuk-caption-l,
+    a {
+      color: govuk-colour("white")    
+    }
+    .govuk-back-link {
+      border-bottom: 1px solid govuk-colour("white");
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .govuk-back-link:focus,
+    .govuk-link:focus {
+      color: govuk-colour("black");
+      border-bottom: 1px solid govuk-colour("black") 
+    }
+   } 
+  

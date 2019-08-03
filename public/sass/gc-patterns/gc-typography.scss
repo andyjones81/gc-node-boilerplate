@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap');
+
+$font-family: 'Oxygen',
+sans-serif;
+
+.gc-text-right {
+    text-align: right;
+}
+
+.gc-text-centre {
+    text-align: center;
+}
+
+.gc-text-uppercase {
+    text-transform: uppercase;
+}
+
+.gc-text-lowercase {
+    text-transform: lowercase
+}
+
+.gc-text-capitalize {
+    text-transform: capitalize
+}
+
+.gc-meta { 
+    margin-top: 5px;
+      color: govuk-colour('dark-grey');
+      @include govuk-font(14)
+    }
