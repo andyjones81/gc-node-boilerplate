@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+
+        <nav class="gc-vertical-nav">
+
+            <ul class="gc-vertical-nav__section">
+
+                <li class="gc-vertical-nav__section-item gc-vertical-nav__section-item--current">
+                    <span class="gc-vertical-nav--count">1</span>
+                    <a class="gc-vertical-nav__link govuk-link" href="#">Menu item 1</a>
+                </li>
+
+                <li class="gc-vertical-nav__section-item">
+
+                    <span class="gc-vertical-nav--count">1</span>
+                    <a class="gc-vertical-nav__link govuk-link" href="#">Menu item 2</a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+        <div class="gc-alert gc-alert--info">
+            <h3 class="govuk-heading-m">Info panel</h3>
+            <p class="govuk-body">Information</p>
+        </div>
+
+        <div class="gc-alert gc-alert--warning">
+            <h3 class="govuk-heading-m">Warning panel</h3>
+            <p class="govuk-body">Information</p>
+        </div>
+
+        <div class="gc-alert gc-alert--success">
+            <h3 class="govuk-heading-m">Success panel</h3>
+            <p class="govuk-body">Information</p>
+        </div>
+
+        <div class="govuk-form-group">
+            <label class="govuk-label" for="amount">
+                Amount
+            </label>
+            <span class="govuk-hint">For example 1500000</span>
+            <div id="amount-currency" class="govuk-visually-hidden">in pounds</div>
+            <div class="gc-currency-input">
+                <div class="gc-currency-input__symbol" aria-hidden="true">£</div>
+                <input class="govuk-input govuk-input--width-10" id="amount" name="amount" type="number"
+                    aria-describedby="amount-currency " pattern="[0-9]*">
+            </div>
+        </div>
+
+
+        <div class="govuk-grid-row">
+            <div
+                class="gc-cards">
+                <a class="gc-card"
+                    href="/registers/prison-estate/help-us-improve" id="label-download">
+                    <h3 class="govuk-heading-m">Download the data</h3>
+                    <p class="govuk-body">Get a copy of the latest data in this register in CSV format</p>
+                </a> 
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}

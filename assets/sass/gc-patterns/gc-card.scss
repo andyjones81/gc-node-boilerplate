@@ -1,0 +1,41 @@
+
+@media screen and (min-width: 641px){
+    .gc-cards{
+        display:flex
+    }
+}
+.gc-card{
+    background:#f8f8f8;
+    border:1px solid #bfc1c3;
+    box-sizing:border-box;
+    display:block;
+    margin:0 15px;
+    text-decoration:none;
+    padding: 15px;
+}
+@media screen and (min-width: 641px){
+    .gc-card{
+        float:left;
+        width:calc(50% - 30px)
+    }
+}
+.gc-card:hover{
+    border-color:#005ea5;
+    box-shadow:0 0 0 1px #005ea5
+}
+.gc-card [class^="govuk-heading-"]{
+   @include govuk-font(16);
+   font-weight: 700;
+   color: $govuk-link-colour;
+   margin-bottom:15px;
+}
+.gc-card:hover [class^="govuk-heading-"]{
+   
+    color: $govuk-link-hover-colour;
+ }
+
+.gc-card p{
+    color:#0b0c0c;
+   @include govuk-font(16);
+   margin-bottom:0px;
+}

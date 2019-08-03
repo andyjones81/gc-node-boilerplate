@@ -1,0 +1,16 @@
+.gc-alert {
+    border: 5px solid $govuk-border-colour;
+    padding: 15px 15px 0px 15px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.gc-alert--info {
+    border: 5px solid govuk-colour('blue');
+}
+.gc-alert--success {
+    border: 5px solid govuk-colour('green');
+}
+.gc-alert--warning {
+    border: 5px solid govuk-colour('orange');
+}

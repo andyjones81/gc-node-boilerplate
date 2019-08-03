@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Gambling Commission</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
+
+  <!--[if !IE 8]><!-->
+  <link href="/public/stylesheets/application.css" rel="stylesheet" />
+  <!--<![endif]-->  
+
+  <!--[if IE 8]>
+    <link href="/govuk-frontend/all-ie8.css" rel="stylesheet" />
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="/html5-shiv/html5shiv.js"></script>
+  <![endif]-->
+
+  <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
+</head>
+
+<body class="govuk-template__body ">
+  <script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+  </script>
+
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+  <header class="govuk-header gc-product-layout" role="banner" data-module="header">
+    <div class="govuk-header__container govuk-width-container">
+  
+      <div class="govuk-header__logo">
+        <a class="govuk-header__link govuk-header__link--homepage" href="/{{version}}/hub/journey" data-track="'click','Header','Logo'">
+          <img src="/public/images/logo.png" alt="Gambling Commission Logo" class="gc-logo-image">
+        </a>
+      </div>
+      <div class="govuk-header__content">
+  
+  
+        <a href="/v2/hub/" class="govuk-header__link govuk-header__link--service-name" data-track="'click','Header','Service name'">
+          Node JS Application
+        </a>
+  
+        <button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation"
+          aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/{{version}}/operator/summary" ga-on="click" ga-event-category="Header" ga-event-action="Click" ga-event-label="Businesses">
+                Menu item 1
+              </a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/{{version}}/personal/summary" ga-on="click" ga-event-category="Header" ga-event-action="Click" ga-event-label="Individuals">
+                Menu item 2
+              </a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/{{version}}/premises/summary" ga-on="click" ga-event-category="Header" ga-event-action="Click" ga-event-label="Premises">
+                Menu item 3
+              </a>
+            </li>
+           
+          </ul>
+        </nav>
+  
+      </div>
+  
+    </div>
+  
+    {% block headerInfo %}
+    {% endblock %}
+  
+  </header>
+  <div class="govuk-width-container">
+      <main class="govuk-main-wrapper " id="main-content" role="main">
+  
+  {% block main %}
+
+  {% endblock %}
+          </main>
+      </div>
+  <footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <h2 class="govuk-visually-hidden">Support links</h2>
+  
+          <div class="footer-meta-inner">
+            <ul class="govuk-footer__inline-list">
+  
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="http://www.gamblingcommission.gov.uk/Footer/Privacy-and-cookies.aspx"
+                  target="_Blank">Privacy Policy</a>
+              </li>
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="/{{version}}/hub/accessibility-statement">Accessibility statement</a>
+              </li>
+            </ul>
+            <p class="govuk-body-s">This service is provided by Gambling Commission Digital Team</p>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+ 
+
+  <script src="/public/javascripts/jquery-1.11.3.js"></script>
+  <script src="/public/javascripts/all.js"></script>
+  <script src="/public/javascripts/auto-store-data.js"></script>
+  <script>
+    window.GOVUKFrontend.initAll()
+
+  </script>
+</body>
+
+</html>
